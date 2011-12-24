@@ -18,7 +18,7 @@ def upload(request):
 
         if form.is_valid():
             file = request.FILES['image']
-            filename = file.name
+            filename = datetime.now().strftime("%Y%m%d%H%M%S%f") + file.name
 
             conn = connect_s3()
             bucket = conn.create_bucket('developerrage')
