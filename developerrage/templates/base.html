@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %} Developer Rage (Comics)</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css" />
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <ul id="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/submit/" class="special">Submit a Rage</a></li>
+                </ul>
+                <h1>Developer Rage</h1>
+            </div>
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>
