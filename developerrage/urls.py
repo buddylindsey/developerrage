@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     url(r'^$', 'home.views.index', name='home'),
     url(r'^submit/$', 'comic.views.upload'),
     url(r'^about/$', 'home.views.about'),
+    url(r'^(?P<comic_id>\d+)-(?P<slug>[-\w]+)/$', 'comic.views.comic'),
     # Examples:
     # url(r'^developerrage/', include('developerrage.foo.urls')),
 

@@ -3,7 +3,11 @@
 {% block content %}
         {% for comic in comics %}
         <div class="comic-container">
-            <div class="title">{{ comic.title }}</div>
+            <div class="title">
+                <a href="/{{ comic.id }}-{{ comic.slug }}">
+                    {{ comic.title }}
+                </a>
+            </div>
             <div class="image">
                 <img src="https://s3.amazonaws.com/developerrage/{{ comic.image }}" />
             </div>

@@ -9,6 +9,9 @@ class Comic(models.Model):
     approved = models.BooleanField(default=False)
     created_at = models.DateTimeField(default=datetime.now)
 
+    def image_url(self):
+        return "https://s3.amazonaws.com/developerrage/%s" % self.image
+
     def admin_thumbnail(self):
         return u'<a href="https://s3.amazonaws.com/developerrage/%s"><img src="https://s3.amazonaws.com/developerrage/%s" height="100px" width="100px" /></a>' % (self.image, self.image)
     
