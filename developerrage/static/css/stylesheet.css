@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+        line-height: 1.6em;
         font-family: Helvetica, Sans-Serif, Verdana, Arial;
 }
 ol, ul {
@@ -43,8 +43,16 @@ table {
 	border-spacing: 0;
 }
 
-body{
+h1{
     line-height: 1.6em;
+    font-size: 40px;
+    margin: 0px;
+}
+
+h2{
+    line-height: 1.6em;
+    font-size: 25px;
+    margin: 0px;
 }
 
 #main{
